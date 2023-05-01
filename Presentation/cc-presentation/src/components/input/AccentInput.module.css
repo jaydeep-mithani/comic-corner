@@ -1,0 +1,94 @@
+.input {
+	position: relative;
+	margin: 0;
+}
+.input-label {
+	color: #1aff00;
+	text-transform: capitalize;
+}
+.themed-input,
+.themed-input:focus {
+	box-shadow: none !important;
+	background-color: transparent;
+	border-radius: 0%;
+	border-width: 0 0 2px 0;
+	border-color: #555;
+	color: white;
+
+	background: linear-gradient(to right, #3b3b3b, #343434, #3b3b3b, #343434, #3b3b3b);
+	background-size: 200%;
+	background-position: left;
+	transition: all 0.5s ease;
+}
+.themed-input:focus {
+	background-position: right;
+}
+
+.input .anim-1::before {
+	content: "";
+	width: 0%;
+	height: 2px;
+	background-color: #1aff00;
+	transition: all 0.5s linear;
+
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.input .anim-1::after {
+	content: "";
+	width: 0%;
+	height: 2px;
+	background-color: #1aff00;
+	transition: all 0.5s linear;
+
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.input .anim-2::before {
+	content: "";
+	width: 2px;
+	height: 0%;
+	background-color: #1aff00;
+	transition: all 0.2s linear;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.input .anim-2::after {
+	content: "";
+	width: 2px;
+	height: 0%;
+	background-color: #1aff00;
+	transition: all 0.1s linear;
+
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.input:hover .anim-1::before,
+.input:hover .anim-1::after {
+	width: 100%;
+}
+.input:hover .anim-2::before,
+.input:hover .anim-2::after {
+	height: 100%;
+}
+.input-label:has(.themed-input:focus) ~ .anim-1::before {
+	width: 100%;
+	transition: all 1s ease;
+}
+
+.themed-input:disabled {
+	background: none;
+	transition: none;
+	color: #7f7f7f;
+}
+
+.border-disable::after, .border-disable::before {
+	height: 0% !important;
+	transition: none !important;
+	width: 0% !important;
+}

@@ -1,0 +1,40 @@
+<mxfile host="www.draw.io" modified="2023-04-21T17:04:51.931Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48" etag="vNkkoZkfIeIATxf9aXWr" version="21.2.1" type="device">
+  <diagram name="Page-1" id="pjIsvNlCbreU-gbsQrCN">
+    <mxGraphModel dx="975" dy="573" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="e2T50CsJCkHXWkZ-Idni-2" value="&lt;b&gt;User Session&lt;/b&gt;" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;width=120;height=50;" vertex="1" parent="1">
+          <mxGeometry x="70" y="40" width="630" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="e2T50CsJCkHXWkZ-Idni-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="e2T50CsJCkHXWkZ-Idni-4" target="e2T50CsJCkHXWkZ-Idni-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2T50CsJCkHXWkZ-Idni-4" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="120" y="130" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e2T50CsJCkHXWkZ-Idni-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="e2T50CsJCkHXWkZ-Idni-6" target="e2T50CsJCkHXWkZ-Idni-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2T50CsJCkHXWkZ-Idni-6" value="Not logged in&lt;br&gt;/ not signed up" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="115" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e2T50CsJCkHXWkZ-Idni-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="e2T50CsJCkHXWkZ-Idni-7" target="e2T50CsJCkHXWkZ-Idni-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2T50CsJCkHXWkZ-Idni-7" value="Logged in&lt;br&gt;/ Signed up" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="115" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e2T50CsJCkHXWkZ-Idni-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="e2T50CsJCkHXWkZ-Idni-8" target="e2T50CsJCkHXWkZ-Idni-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2T50CsJCkHXWkZ-Idni-8" value="Logged out" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e2T50CsJCkHXWkZ-Idni-9" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="360" y="245" width="30" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

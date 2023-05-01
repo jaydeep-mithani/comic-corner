@@ -1,0 +1,146 @@
+.flip-box {
+	background-color: transparent;
+	width: 300px !important;
+	height: 460px !important;
+	height: fit-content;
+	perspective: 1000px;
+}
+.flip-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+}
+.flip-box h2 {
+	font-family: "Press Start 2P", cursive;
+	line-height: 40px;
+	max-width: 270px;
+	text-shadow: 0px 0px 15px #1aff0099;
+	word-wrap: break-word;
+}
+
+.flip-box-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+	animation: flip;
+	animation-duration: 4s;
+	animation-fill-mode: forwards;
+}
+.flip-box:not(:hover) .flip-box-inner {
+	animation: flipBack;
+	animation-duration: 1.5s;
+	animation-fill-mode: forwards;
+}
+.flip-box:hover .flip-box-back {
+	animation: reflect;
+	animation-duration: 4s;
+	animation-fill-mode: forwards;
+}
+.flip-box:not(:hover) .flip-box-back {
+	animation: reflectReverse;
+	animation-duration: 1.5s;
+	animation-fill-mode: forwards;
+}
+
+.flip-box-front,
+.flip-box-back {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	border-radius: 15px;
+	overflow: hidden;
+}
+.flip-box-back {
+	box-shadow: 14px 16px 24px -3px rgba(0, 0, 0, 0.3) inset;
+	-webkit-box-shadow: 14px 16px 24px -3px rgba(0, 0, 0, 0.3) inset;
+	-moz-box-shadow: 14px 16px 24px -3px rgba(0, 0, 0, 0.3) inset;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.flip-box-front {
+	background-color: #1e1e1ee0;
+	color: black;
+}
+
+.flip-box-back {
+	background: linear-gradient(to top right, #1e1e1eaa 40%, #3a3a3aaa 45%, #1e1e1eaa 50%);
+	background-size: 240%;
+	background-position: right;
+	color: white;
+	transform: rotateY(180deg);
+}
+
+@keyframes flip {
+	0% {
+		transform: rotateY(0deg);
+	}
+	15% {
+		transform: rotateX(0deg) rotateY(180deg) rotatez(0deg);
+		scale: 0.8;
+	}
+	100% {
+		transform: rotateX(21deg) rotateY(190deg) rotatez(-5deg);
+		scale: 0.9;
+	}
+}
+@keyframes flipBack {
+	0% {
+		transform: rotateX(21deg) rotateY(190deg) rotatez(-5deg);
+		scale: 0.9;
+	}
+	30% {
+		transform: rotateX(0deg) rotateY(180deg) rotatez(0deg);
+		scale: 0.8;
+
+	}
+	100% {
+		transform: rotateY(0deg);
+		scale: 1;
+	}
+}
+
+@keyframes reflect {
+	0% {
+		background-position: right;
+	}
+	15% {
+		background-position: right;
+	}
+	100% {
+		background-position: left;
+	}
+}
+@keyframes reflectReverse {
+	0% {
+		background-position: left;
+	}
+	30% {
+		background-position: right;
+	}
+	100% {
+		background-position: right;
+	}
+}
+
+@media only screen and (max-width: 350px) {
+	.flip-box {
+		width: 230px !important;
+		height: 320px !important;
+	}
+	.flip-box h2 {
+		font-size: 1.2rem;
+		line-height: 30px;
+		max-width: 220px;
+	}
+}

@@ -1,0 +1,102 @@
+.error-dialog-wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(255, 255, 255, 0.2);
+	z-index: 999;
+	animation: fadeIn 0.7s;
+	color: #1aff00;
+}
+
+.error-dialog-content {
+	position: relative;
+	width: 400px;
+	background-color: #222;
+	border-radius: 15px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+	animation: slideDown 0.7s;
+	border: 1px solid #1aff00;
+}
+
+.close-button {
+	box-shadow: none !important;
+}
+
+.error-dialog-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	border-bottom: 1px solid #555;
+}
+
+.error-dialog-header h3 {
+	margin: 0;
+}
+
+.error-dialog-header button {
+	background-color: transparent;
+	border: none;
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+
+.error-dialog-body {
+	padding: 25px 10px 15px;
+	font-family: cursive;
+	color: #aaa;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes slideDown {
+	from {
+		transform: translateY(-50%);
+	}
+	to {
+		transform: translateY(0);
+	}
+}
+
+/* .msg {
+	border-right: solid 3px rgba(0,255,0,.75);
+	white-space: nowrap;
+	overflow: hidden;
+	font-family: 'Source Code Pro', monospace;  
+	font-size: 28px;
+	color: rgba(255,255,255,.70);
+}
+
+.msg {
+	animation: animated-text 4s steps(29, end) 1s 1 normal both, animated-cursor 600ms steps(29, end) infinite;
+}
+
+@keyframes animated-text {
+	from {
+		width: 0;
+	}
+	to {
+		width: 500px;
+	}
+}
+
+@keyframes animated-cursor {
+	from {
+		border-right-color: rgba(0, 255, 0, 0.75);
+	}
+	to {
+		border-right-color: transparent;
+	}
+} */

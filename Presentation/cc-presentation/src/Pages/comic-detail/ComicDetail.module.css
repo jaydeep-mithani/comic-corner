@@ -1,0 +1,12 @@
+.label {
+      font-family: 'Bruno Ace', cursive;
+	color: #1aff00;
+      font-weight: 0;
+      font-size: 1.5rem;
+}
+
+.person {
+      font-weight: lighter;
+      color: #1aff00;
+      margin-left: 3px;
+}

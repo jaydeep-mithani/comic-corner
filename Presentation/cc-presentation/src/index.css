@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Caveat:wght@400;500;600;700&family=Bruno+Ace&family=Press+Start+2P&family=Rampart+One&display=swap");
+
+body {
+    background-color: #333;
+    margin: 0;
+    font-family: "Caveat", cursive;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+    background-color: #1aff00 !important;
+    color: #333 !important;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
+}
+
+.bg-dark {
+    background-color: #222 !important;
+}
+.bg-dark2 {
+    background-color: #333 !important;
+}
+.text-justified {
+    text-align: justify;
+    text-align-last: left;
+}
+.text-eq {
+    text-align: justify;
+}
+
+@media only screen and (min-width: 992px) {
+    .text-justified {
+        text-align-last: right;
+    }
+}
+/* 
+font-family: 'Caveat', cursive;
+font-family: 'Press Start 2P', cursive;
+font-family: 'Rampart One', cursive;
+font-family: 'Bangers', cursive; 
+font-family: 'Bruno Ace', cursive;*/

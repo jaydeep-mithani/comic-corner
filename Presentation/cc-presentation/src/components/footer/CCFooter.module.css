@@ -1,0 +1,38 @@
+.gradient {
+	background: linear-gradient(to bottom, #30303099, #222);
+}
+.cc-footer article {
+	color: #484848;
+	font-weight: bold;
+	font-family: "Press Start 2P", cursive;
+	letter-spacing: 7px;
+	cursor: pointer;
+}
+.cc-footer article span {
+	transition: 0.5s linear;
+}
+.cc-footer article:hover span:nth-child(1) {
+	margin-right: 5px;
+}
+.cc-footer article:hover span:nth-child(1):after {
+	content: "omic";
+}
+.cc-footer article:hover span:nth-child(2) {
+	margin-left: 15px;
+}
+.cc-footer article:hover span:nth-child(2):after {
+	content: "orner";
+}
+.cc-footer article:hover span {
+	color: #b9ffb1;
+	text-shadow: 0 0 10px #1aff00, 0 0 20px #1aff00, 0 0 40px #1aff00;
+}
+
+.qLink {
+	transition: all 0.5s linear;
+}
+.qLink:hover {
+	color: white;
+	text-shadow: 0px 0px 12px #1aff00;
+	letter-spacing: 8px;
+}

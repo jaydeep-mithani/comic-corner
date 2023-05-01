@@ -1,0 +1,111 @@
+/* Logo Styles */
+.cc-navbar article {
+    color: #484848;
+    font-weight: bold;
+    font-family: "Press Start 2P", cursive;
+    letter-spacing: 7px;
+    cursor: pointer;
+}
+.cc-navbar article span {
+    transition: 0.5s linear;
+}
+.cc-navbar article:hover span:nth-child(1) {
+    margin-right: 5px;
+}
+.cc-navbar article:hover span:nth-child(1):after {
+    content: "omic";
+}
+.cc-navbar article:hover span:nth-child(2) {
+    margin-left: 15px;
+}
+.cc-navbar article:hover span:nth-child(2):after {
+    content: "orner";
+}
+.cc-navbar article:hover span {
+    color: #b9ffb1;
+    text-shadow: 0 0 10px #1aff00, 0 0 20px #1aff00, 0 0 40px #1aff00;
+}
+
+/* Menu bar items style */
+.menu-box {
+    position: relative;
+    padding: 5px 8px;
+    margin: auto 0.6rem;
+    color: #ffffffaa;
+    transition: color 0.5s linear;
+}
+.menu-box:hover {
+    color: #1aff00;
+}
+.menu-box .links::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 0%;
+    background-color: #1aff00;
+    transition: 0.2s linear;
+}
+.menu-box .links::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 1px;
+    height: 0%;
+    background-color: #1aff00;
+    transition: 0.2s linear;
+}
+.menu-box .border::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 1px;
+    background-color: #1aff00;
+    transition: 0.5s linear;
+}
+.menu-box .border::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0%;
+    height: 1px;
+    background-color: #1aff00;
+    transition: 0.5s linear;
+}
+.menu-box:hover .border::before,
+.menu-box:hover .border::after {
+    width: 100%;
+}
+.menu-box:hover .links::before,
+.menu-box:hover .links::after {
+    height: 100%;
+}
+
+.menu-box.active {
+    color: #1aff00;
+}
+.menu-box.active .border::before,
+.menu-box.active .border::after {
+    width: 100%;
+}
+.menu-box.active .links::before,
+.menu-box.active .links::after {
+    height: 100%;
+}
+
+.bars {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.turnoff img {
+    filter: invert(73%) sepia(43%) saturate(5794%) hue-rotate(70deg)
+        brightness(112%) contrast(126%);
+    transition: all 1s linear;
+	width: 20px;
+}

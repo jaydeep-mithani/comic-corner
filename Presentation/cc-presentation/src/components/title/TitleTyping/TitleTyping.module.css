@@ -1,0 +1,45 @@
+.type {
+	border-right: solid 3px #1aff00;
+	white-space: nowrap;
+	overflow: hidden;
+	color: rgba(255, 255, 255, 0.7);
+	text-decoration: none;
+	transition: all 0.5s linear;
+}
+.type:hover {
+	text-shadow: 0px 0px 10px #1aff00aa;
+	color: #c7ffc0;
+}
+
+/* Animation */
+.type {
+	animation: animated-text 6s steps(29, end) 1s infinite normal both, animated-cursor 600ms steps(29, end) infinite;
+}
+
+/* text animation */
+
+@keyframes animated-text {
+	0% {
+		width: 0px;
+	}
+	30% {
+		width: var(--length, 75%);
+	}
+	85% {
+		width: var(--length, 75%);
+	}
+	100% {
+		width: 0px;
+	}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor {
+	from {
+		border-right-color: rgba(0, 255, 0, 0.75);
+	}
+	to {
+		border-right-color: transparent;
+	}
+}

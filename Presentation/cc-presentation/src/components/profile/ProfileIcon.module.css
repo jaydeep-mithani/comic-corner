@@ -1,0 +1,22 @@
+.profile {
+	width: 50px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: #222 !important;
+	font-size: xx-large;
+	justify-content: center;
+	font-family: 'Rampart One', cursive;
+	font-weight: 500;
+	margin-left: 0.5rem;
+	border-radius: 100px;
+	background-color: #1aff00;
+	align-self: center;
+	border: 2px solid #222;
+	outline: 1px solid #1aff00;
+	box-shadow: 0px 0px 15px 1px #1aff00aa;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}

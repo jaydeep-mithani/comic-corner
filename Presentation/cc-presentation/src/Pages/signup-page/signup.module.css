@@ -1,0 +1,103 @@
+.preview {
+	width: 17rem;
+	height: 17rem;
+	border: 8px solid #444;
+	outline: 4px solid #555;
+}
+.prw {
+	height: 16rem;
+	width: 16rem;
+	object-fit: cover;
+}
+
+.text-container {
+	color: #333;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: auto;
+	font-family: "Press Start 2P", cursive;
+}
+
+.text-container > span {
+	text-transform: uppercase;
+	animation: glow 4s ease-in-out infinite;
+}
+
+@keyframes glow {
+	0%,
+	100% {
+		color: #fff;
+		text-shadow: 0 0 10px #1aff00, 0 0 50px #1aff00, 0 0 100px #1aff00;
+	}
+
+	10%,
+	90% {
+		color: #333;
+		text-shadow: none;
+	}
+}
+
+.text-container > span:nth-child(2) {
+	animation-delay: 0.25s;
+}
+
+.text-container > span:nth-child(3) {
+	animation-delay: 0.5s;
+}
+
+.text-container > span:nth-child(4) {
+	animation-delay: 0.75s;
+}
+
+.text-container > span:nth-child(5) {
+	animation-delay: 1s;
+}
+
+.text-container > span:nth-child(6) {
+	animation-delay: 1.25s;
+}
+
+.text-container > span:nth-child(7) {
+	animation-delay: 1.5s;
+}
+
+.text-container > span:nth-child(8) {
+	animation-delay: 2s;
+}
+
+.text-container > span:nth-child(9) {
+	animation-delay: 2.25s;
+}
+
+.text-container > span:nth-child(10) {
+	animation-delay: 2.5s;
+}
+
+.text-container > span:nth-child(11) {
+	animation-delay: 3s;
+}
+
+.text-container > span:nth-child(12) {
+	animation-delay: 3.5s;
+}
+
+@media only screen and (max-width: 768px) {
+	.text-container {
+		font-size: 2rem;
+	}
+}
+@media only screen and (max-width: 576px) {
+	.preview {
+		width: 14rem;
+		height: 14rem;
+	}
+	.prw {
+		height: 13rem;
+		width: 13rem;
+		object-fit: cover;
+	}
+	.text-container {
+		font-size: 1rem;
+	}
+}

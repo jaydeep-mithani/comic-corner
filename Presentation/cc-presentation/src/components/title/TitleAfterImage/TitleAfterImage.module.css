@@ -1,0 +1,46 @@
+.wrapper {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	bottom: -5%;
+	left: 5%;
+}
+.label {
+	position: relative;
+	text-transform: capitalize;
+	font-size: 1.5em;
+	font-weight: bolder;
+	letter-spacing: 4px;
+}
+.content {
+	position: relative;
+	text-transform: capitalize;
+	font-size: 1.5em;
+	font-weight: bolder;
+	letter-spacing: 4px;
+	overflow: hidden;
+	background: linear-gradient(90deg, #1aff00, #333, #1aff00);
+	background-repeat: no-repeat;
+	background-size: 80%;
+	animation: animate 3s linear infinite;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+	0% {
+		background-position: -500%;
+	}
+	100% {
+		background-position: 500%;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.content, .label {
+		font-size: 0.9em;
+	}
+}

@@ -1,0 +1,23 @@
+body::-webkit-scrollbar {
+    display: none;
+}
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.backdrop {
+    min-height: 100vh;
+    position: absolute;
+    z-index: -3;
+}
+.foreground {
+    position: relative;
+    z-index: -1;
+}
+.coating {
+    position: absolute;
+    background-color: #00000000;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
